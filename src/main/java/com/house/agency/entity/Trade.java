@@ -15,11 +15,18 @@ public class Trade implements Serializable {
 	private String type;
 	private String title;
 	private long price;
+	private Date releaseTime;
 	private String status;
 	private Date createTime;
 	private Date updateTime;
 	private String remarks;
 	
+	public Date getReleaseTime() {
+		return releaseTime;
+	}
+	public void setReleaseTime(Date releaseTime) {
+		this.releaseTime = releaseTime;
+	}
 	public String getTitle() {
 		return title;
 	}
