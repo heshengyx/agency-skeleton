@@ -13,12 +13,19 @@ public class Trade implements Serializable {
 	private String houseId;
 	private String userId;
 	private String type;
+	private String title;
 	private long price;
 	private String status;
 	private Date createTime;
 	private Date updateTime;
 	private String remarks;
 	
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
 	public String getId() {
 		return id;
 	}

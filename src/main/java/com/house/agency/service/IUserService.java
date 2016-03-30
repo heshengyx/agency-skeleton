@@ -7,11 +7,11 @@ import com.house.agency.param.UserQueryParam;
 
 public interface IUserService {
 
-	int save(User param);
-	int update(User param);
-	int deleteById(String id);
+	void save(User param);
+	void update(User param);
+	void deleteById(String id);
 	User getDataById(String id);
 	User getDataByUsername(User param);
 
-	IPage<User> query(UserQueryParam param);
+	IPage<User> query(UserQueryParam param, int page, int rows);
 }

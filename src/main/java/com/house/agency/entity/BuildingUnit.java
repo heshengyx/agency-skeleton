@@ -12,7 +12,7 @@ public class BuildingUnit implements Serializable {
 	private String id;
 	private String buildingId;
 	private String name;
-	private String floor;
+	private int floor;
 	private String status;
 	private Date createTime;
 	private Date updateTime;
@@ -36,10 +36,10 @@ public class BuildingUnit implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getFloor() {
+	public int getFloor() {
 		return floor;
 	}
-	public void setFloor(String floor) {
+	public void setFloor(int floor) {
 		this.floor = floor;
 	}
 	public String getStatus() {

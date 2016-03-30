@@ -8,15 +8,43 @@ public class Building implements Serializable {
 	/**  */
 	private static final long serialVersionUID = 5051212720480835254L;
 	private String id;
+	private String townId;
 	private String buildingName;
 	private String buildingYear;
-	private String buildingFloor;
+	private int buildingFloor;
 	private String buildingAddress;
+	private String coordinateX;
+	private String coordinateY;
+	private String type;
 	private String status;
 	private Date createTime;
 	private Date updateTime;
 	private String remarks;
 	
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getTownId() {
+		return townId;
+	}
+	public void setTownId(String townId) {
+		this.townId = townId;
+	}
+	public String getCoordinateX() {
+		return coordinateX;
+	}
+	public void setCoordinateX(String coordinateX) {
+		this.coordinateX = coordinateX;
+	}
+	public String getCoordinateY() {
+		return coordinateY;
+	}
+	public void setCoordinateY(String coordinateY) {
+		this.coordinateY = coordinateY;
+	}
 	public String getBuildingAddress() {
 		return buildingAddress;
 	}
@@ -29,10 +57,10 @@ public class Building implements Serializable {
 	public void setBuildingYear(String buildingYear) {
 		this.buildingYear = buildingYear;
 	}
-	public String getBuildingFloor() {
+	public int getBuildingFloor() {
 		return buildingFloor;
 	}
-	public void setBuildingFloor(String buildingFloor) {
+	public void setBuildingFloor(int buildingFloor) {
 		this.buildingFloor = buildingFloor;
 	}
 	public String getId() {
