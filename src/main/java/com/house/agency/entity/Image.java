@@ -3,32 +3,46 @@ package com.house.agency.entity;
 import java.io.Serializable;
 import java.util.Date;
 
-public class HouseImage implements Serializable {
+public class Image implements Serializable {
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -5632093237409910736L;
+	private static final long serialVersionUID = 6165905120763729764L;
 	private String id;
-	private String houseId;
+	private String foreignId;
 	private String userId;
+	private String title;
 	private String url;
+	private String type;
 	private String status;
 	private Date createTime;
 	private Date updateTime;
 	private String remarks;
 	
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getForeignId() {
+		return foreignId;
+	}
+	public void setForeignId(String foreignId) {
+		this.foreignId = foreignId;
+	}
 	public String getUserId() {
 		return userId;
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
-	}
-	public String getHouseId() {
-		return houseId;
-	}
-	public void setHouseId(String houseId) {
-		this.houseId = houseId;
 	}
 	public String getUrl() {
 		return url;
@@ -36,11 +50,11 @@ public class HouseImage implements Serializable {
 	public void setUrl(String url) {
 		this.url = url;
 	}
-	public String getId() {
-		return id;
+	public String getType() {
+		return type;
 	}
-	public void setId(String id) {
-		this.id = id;
+	public void setType(String type) {
+		this.type = type;
 	}
 	public String getStatus() {
 		return status;
