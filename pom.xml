@@ -5,6 +5,7 @@
 	<artifactId>agency-skeleton</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
+	
 	<name>agency-skeleton</name>
 	<url>http://maven.apache.org</url>
 

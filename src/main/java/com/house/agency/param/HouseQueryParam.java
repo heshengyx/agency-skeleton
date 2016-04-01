@@ -1,8 +1,7 @@
 package com.house.agency.param;
 
-import java.io.Serializable;
 
-public class HouseQueryParam implements Serializable {
+public class HouseQueryParam extends QueryParam {
 
 	/**
 	 * 
