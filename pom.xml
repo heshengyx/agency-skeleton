@@ -23,7 +23,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>building-skeleton</finalName>
+		<finalName>agency-skeleton</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
