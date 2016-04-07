@@ -12,6 +12,7 @@ public class Trade implements Serializable {
 	private String id;
 	private String houseId;
 	private String userId;
+	private String imageId;
 	private String type;
 	private String title;
 	private long price;
@@ -21,6 +22,12 @@ public class Trade implements Serializable {
 	private Date updateTime;
 	private String remarks;
 	
+	public String getImageId() {
+		return imageId;
+	}
+	public void setImageId(String imageId) {
+		this.imageId = imageId;
+	}
 	public Date getReleaseTime() {
 		return releaseTime;
 	}
