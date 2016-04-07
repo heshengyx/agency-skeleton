@@ -9,8 +9,9 @@ public class TradeData implements Serializable {
 	 */
 	private static final long serialVersionUID = 1738247749000572394L;
 	private String tradeId;
-	private String title;
+	private String imgTitle;
 	private String url;
+	private String title;
 	private String buildingName;
 	private String buildingAddress;
 	private int area;
@@ -18,6 +19,12 @@ public class TradeData implements Serializable {
 	private int saloon;
 	private int toilet;
 	
+	public String getImgTitle() {
+		return imgTitle;
+	}
+	public void setImgTitle(String imgTitle) {
+		this.imgTitle = imgTitle;
+	}
 	public String getTradeId() {
 		return tradeId;
 	}
