@@ -12,15 +12,43 @@ public class TradeData implements Serializable {
 	private String imgTitle;
 	private String url;
 	private String title;
+	private String type;
+	private String townName;
 	private String buildingName;
 	private String buildingAddress;
-	private String type;
+	private String buildingYear;
+	private int buildingFloor;
 	private int price;
 	private int area;
 	private int room;
 	private int saloon;
 	private int toilet;
+	private int floor;
 	
+	public String getBuildingYear() {
+		return buildingYear;
+	}
+	public void setBuildingYear(String buildingYear) {
+		this.buildingYear = buildingYear;
+	}
+	public int getBuildingFloor() {
+		return buildingFloor;
+	}
+	public void setBuildingFloor(int buildingFloor) {
+		this.buildingFloor = buildingFloor;
+	}
+	public int getFloor() {
+		return floor;
+	}
+	public void setFloor(int floor) {
+		this.floor = floor;
+	}
+	public String getTownName() {
+		return townName;
+	}
+	public void setTownName(String townName) {
+		this.townName = townName;
+	}
 	public String getType() {
 		return type;
 	}

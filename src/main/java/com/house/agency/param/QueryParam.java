@@ -8,15 +8,15 @@ public class QueryParam implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = -6056569204683753213L;
-	protected String draw;
+	protected int draw;
 	protected int start;
 	protected int page;
 	protected int length;
 	
-	public String getDraw() {
+	public int getDraw() {
 		return draw;
 	}
-	public void setDraw(String draw) {
+	public void setDraw(int draw) {
 		this.draw = draw;
 	}
 	public int getStart() {
