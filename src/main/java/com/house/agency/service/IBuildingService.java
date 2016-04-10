@@ -2,6 +2,7 @@ package com.house.agency.service;
 
 import java.util.List;
 
+import com.house.agency.data.BuildingData;
 import com.house.agency.entity.Building;
 import com.house.agency.page.IPage;
 import com.house.agency.param.BuildingQueryParam;
@@ -14,5 +15,5 @@ public interface IBuildingService {
 	Building getDataById(String id);
 	
 	IPage<Building> query(BuildingQueryParam param, int page, int rows);
-	List<Building> list(BuildingQueryParam param);
+	List<BuildingData> list(BuildingQueryParam param);
 }

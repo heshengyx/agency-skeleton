@@ -11,16 +11,22 @@ public class Building implements Serializable {
 	private String townId;
 	private String buildingName;
 	private String buildingYear;
-	private int buildingFloor;
 	private String buildingAddress;
 	private String coordinateX;
 	private String coordinateY;
 	private String type;
+	private int subway;
 	private String status;
 	private Date createTime;
 	private Date updateTime;
 	private String remarks;
 	
+	public int getSubway() {
+		return subway;
+	}
+	public void setSubway(int subway) {
+		this.subway = subway;
+	}
 	public String getType() {
 		return type;
 	}
@@ -56,12 +62,6 @@ public class Building implements Serializable {
 	}
 	public void setBuildingYear(String buildingYear) {
 		this.buildingYear = buildingYear;
-	}
-	public int getBuildingFloor() {
-		return buildingFloor;
-	}
-	public void setBuildingFloor(int buildingFloor) {
-		this.buildingFloor = buildingFloor;
 	}
 	public String getId() {
 		return id;
