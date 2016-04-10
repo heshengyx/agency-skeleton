@@ -9,10 +9,11 @@ public class HouseDetailData implements Serializable {
 	 */
 	private static final long serialVersionUID = 8471894817069139241L;
 	private String tradeId;
-	private String imgTitle;
-	private String url;
+	private String houseId;
+	private String buildingId;
 	private String title;
 	private String type;
+	private String districtName;
 	private String townName;
 	private String buildingName;
 	private String buildingAddress;
@@ -24,23 +25,45 @@ public class HouseDetailData implements Serializable {
 	private int saloon;
 	private int toilet;
 	private int floor;
+	private int face;
+	private String username;
+	private String phone;
+	
+	public String getHouseId() {
+		return houseId;
+	}
+	public void setHouseId(String houseId) {
+		this.houseId = houseId;
+	}
+	public String getBuildingId() {
+		return buildingId;
+	}
+	public void setBuildingId(String buildingId) {
+		this.buildingId = buildingId;
+	}
+	public String getDistrictName() {
+		return districtName;
+	}
+	public void setDistrictName(String districtName) {
+		this.districtName = districtName;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
 	public String getTradeId() {
 		return tradeId;
 	}
 	public void setTradeId(String tradeId) {
 		this.tradeId = tradeId;
-	}
-	public String getImgTitle() {
-		return imgTitle;
-	}
-	public void setImgTitle(String imgTitle) {
-		this.imgTitle = imgTitle;
-	}
-	public String getUrl() {
-		return url;
-	}
-	public void setUrl(String url) {
-		this.url = url;
 	}
 	public String getTitle() {
 		return title;
