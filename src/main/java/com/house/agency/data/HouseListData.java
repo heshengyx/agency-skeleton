@@ -2,12 +2,12 @@ package com.house.agency.data;
 
 import java.io.Serializable;
 
-public class TradeData implements Serializable {
+public class HouseListData implements Serializable {
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1738247749000572394L;
+	private static final long serialVersionUID = 1999542938990924943L;
 	private String tradeId;
 	private String imgTitle;
 	private String url;
@@ -25,41 +25,11 @@ public class TradeData implements Serializable {
 	private int toilet;
 	private int floor;
 	
-	public String getBuildingYear() {
-		return buildingYear;
+	public String getTradeId() {
+		return tradeId;
 	}
-	public void setBuildingYear(String buildingYear) {
-		this.buildingYear = buildingYear;
-	}
-	public int getBuildingFloor() {
-		return buildingFloor;
-	}
-	public void setBuildingFloor(int buildingFloor) {
-		this.buildingFloor = buildingFloor;
-	}
-	public int getFloor() {
-		return floor;
-	}
-	public void setFloor(int floor) {
-		this.floor = floor;
-	}
-	public String getTownName() {
-		return townName;
-	}
-	public void setTownName(String townName) {
-		this.townName = townName;
-	}
-	public String getType() {
-		return type;
-	}
-	public void setType(String type) {
-		this.type = type;
-	}
-	public int getPrice() {
-		return price;
-	}
-	public void setPrice(int price) {
-		this.price = price;
+	public void setTradeId(String tradeId) {
+		this.tradeId = tradeId;
 	}
 	public String getImgTitle() {
 		return imgTitle;
@@ -67,11 +37,11 @@ public class TradeData implements Serializable {
 	public void setImgTitle(String imgTitle) {
 		this.imgTitle = imgTitle;
 	}
-	public String getTradeId() {
-		return tradeId;
+	public String getUrl() {
+		return url;
 	}
-	public void setTradeId(String tradeId) {
-		this.tradeId = tradeId;
+	public void setUrl(String url) {
+		this.url = url;
 	}
 	public String getTitle() {
 		return title;
@@ -79,11 +49,17 @@ public class TradeData implements Serializable {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public String getUrl() {
-		return url;
+	public String getType() {
+		return type;
 	}
-	public void setUrl(String url) {
-		this.url = url;
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getTownName() {
+		return townName;
+	}
+	public void setTownName(String townName) {
+		this.townName = townName;
 	}
 	public String getBuildingName() {
 		return buildingName;
@@ -96,6 +72,24 @@ public class TradeData implements Serializable {
 	}
 	public void setBuildingAddress(String buildingAddress) {
 		this.buildingAddress = buildingAddress;
+	}
+	public String getBuildingYear() {
+		return buildingYear;
+	}
+	public void setBuildingYear(String buildingYear) {
+		this.buildingYear = buildingYear;
+	}
+	public int getBuildingFloor() {
+		return buildingFloor;
+	}
+	public void setBuildingFloor(int buildingFloor) {
+		this.buildingFloor = buildingFloor;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
 	}
 	public int getArea() {
 		return area;
@@ -121,5 +115,10 @@ public class TradeData implements Serializable {
 	public void setToilet(int toilet) {
 		this.toilet = toilet;
 	}
-	
+	public int getFloor() {
+		return floor;
+	}
+	public void setFloor(int floor) {
+		this.floor = floor;
+	}
 }
