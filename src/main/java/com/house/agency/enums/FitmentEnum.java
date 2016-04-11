@@ -1,17 +1,16 @@
 package com.house.agency.enums;
 
+public enum FitmentEnum {
 
-public enum FaceEnum {
+	ROUGHCAST(CommonEnum.ONE, "毛坯"),
+	SIMPLE(CommonEnum.TWO, "简装"),
+	HARDBACK(CommonEnum.THREE, "精装");
 
-	EAST(CommonEnum.ONE, "东"), 
-    SOUTH(CommonEnum.TWO, "南"),
-    WEST(CommonEnum.THREE, "西"),
-    NORTH(CommonEnum.FOUR, "北");
 	
 	private String value;
 	private String text;
 	
-	private FaceEnum(String value, String text){
+	private FitmentEnum(String value, String text){
 		this.value = value;
 		this.text = text;
 	}
@@ -25,7 +24,7 @@ public enum FaceEnum {
 	
 	public static String getTextByValue(String value) {
 		String text = "";
-		for(FaceEnum e : FaceEnum.values()){
+		for(FitmentEnum e : FitmentEnum.values()){
 			if (e.getValue().equals(value)) {
 				text = e.getText();
 				break;

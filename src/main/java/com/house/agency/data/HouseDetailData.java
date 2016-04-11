@@ -1,6 +1,12 @@
 package com.house.agency.data;
 
 import java.io.Serializable;
+import java.util.Date;
+
+import com.house.agency.enums.BuildingTypeEnum;
+import com.house.agency.enums.FaceEnum;
+import com.house.agency.enums.FitmentEnum;
+import com.house.agency.enums.OwnerEnum;
 
 public class HouseDetailData implements Serializable {
 
@@ -18,6 +24,8 @@ public class HouseDetailData implements Serializable {
 	private String buildingName;
 	private String buildingAddress;
 	private String buildingYear;
+	private String buildingType;
+	private String buildingTypeName;
 	private int buildingFloor;
 	private int price;
 	private int area;
@@ -26,9 +34,91 @@ public class HouseDetailData implements Serializable {
 	private int toilet;
 	private int floor;
 	private int face;
+	private String faceName;
+	private int fitment;
+	private String fitmentName;
+	private int owner;
+	private String ownerName;
+	private String code;
+	private String encode;
+	private Date releaseTime;
 	private String username;
 	private String phone;
-	
+
+	public int getOwner() {
+		return owner;
+	}
+	public void setOwner(int owner) {
+		this.owner = owner;
+	}
+	public String getOwnerName() {
+		String name = OwnerEnum.getTextByValue(String.valueOf(owner));
+		name = (name == null) ?  "" : name;
+		return name;
+	}
+	public void setOwnerName(String ownerName) {
+		this.ownerName = ownerName;
+	}
+	public String getBuildingTypeName() {
+		String name = BuildingTypeEnum.getTextByValue(buildingType);
+		name = (name == null) ?  "" : name;
+		return name;
+	}
+	public void setBuildingTypeName(String buildingTypeName) {
+		this.buildingTypeName = buildingTypeName;
+	}
+	public String getBuildingType() {
+		return buildingType;
+	}
+	public void setBuildingType(String buildingType) {
+		this.buildingType = buildingType;
+	}
+	public int getFitment() {
+		return fitment;
+	}
+	public void setFitment(int fitment) {
+		this.fitment = fitment;
+	}
+	public String getFitmentName() {
+		String name = FitmentEnum.getTextByValue(String.valueOf(fitment));
+		name = (name == null) ?  "" : name;
+		return name;
+	}
+	public void setFitmentName(String fitmentName) {
+		this.fitmentName = fitmentName;
+	}
+	public String getCode() {
+		return code;
+	}
+	public void setCode(String code) {
+		this.code = code;
+	}
+	public String getEncode() {
+		return encode;
+	}
+	public void setEncode(String encode) {
+		this.encode = encode;
+	}
+	public int getFace() {
+		return face;
+	}
+	public void setFace(int face) {
+		this.face = face;
+	}
+	public String getFaceName() {
+		String name = FaceEnum.getTextByValue(String.valueOf(face));
+		name = (name == null) ?  "" : name;
+		return name;
+	}
+	public void setFaceName(String faceName) {
+		this.faceName = faceName;
+	}
+	public Date getReleaseTime() {
+		return releaseTime;
+	}
+	public void setReleaseTime(Date releaseTime) {
+		this.releaseTime = releaseTime;
+	}
 	public String getHouseId() {
 		return houseId;
 	}

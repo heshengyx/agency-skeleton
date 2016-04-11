@@ -17,12 +17,33 @@ public class House implements Serializable {
 	private int saloon;
 	private int toilet;
 	private int kitchen;
-	private String face;
+	private int face;
+	private int fitment;
+	private String code;
+	private String encode;
 	private String status;
 	private Date createTime;
 	private Date updateTime;
 	private String remarks;
 	
+	public int getFitment() {
+		return fitment;
+	}
+	public void setFitment(int fitment) {
+		this.fitment = fitment;
+	}
+	public String getCode() {
+		return code;
+	}
+	public void setCode(String code) {
+		this.code = code;
+	}
+	public String getEncode() {
+		return encode;
+	}
+	public void setEncode(String encode) {
+		this.encode = encode;
+	}
 	public int getArea() {
 		return area;
 	}
@@ -59,10 +80,10 @@ public class House implements Serializable {
 	public void setKitchen(int kitchen) {
 		this.kitchen = kitchen;
 	}
-	public String getFace() {
+	public int getFace() {
 		return face;
 	}
-	public void setFace(String face) {
+	public void setFace(int face) {
 		this.face = face;
 	}
 	public String getBuildingUnitId() {
