@@ -8,10 +8,17 @@ public class BuildingData implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = -7272650354018419260L;
+	private String buildingId;
 	private String label;
 	private String districtName;
 	private String townName;
 	
+	public String getBuildingId() {
+		return buildingId;
+	}
+	public void setBuildingId(String buildingId) {
+		this.buildingId = buildingId;
+	}
 	public String getLabel() {
 		return label;
 	}

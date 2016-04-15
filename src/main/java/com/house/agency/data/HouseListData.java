@@ -1,6 +1,7 @@
 package com.house.agency.data;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class HouseListData implements Serializable {
 
@@ -24,7 +25,14 @@ public class HouseListData implements Serializable {
 	private int saloon;
 	private int toilet;
 	private int floor;
+	private Date releaseTime;
 	
+	public Date getReleaseTime() {
+		return releaseTime;
+	}
+	public void setReleaseTime(Date releaseTime) {
+		this.releaseTime = releaseTime;
+	}
 	public String getTradeId() {
 		return tradeId;
 	}
