@@ -1,5 +1,7 @@
 package com.house.agency.service;
 
+import java.util.List;
+
 import com.house.agency.data.HouseDetailData;
 import com.house.agency.data.HouseListData;
 import com.house.agency.entity.House;
@@ -16,4 +18,5 @@ public interface IHouseService {
 	
 	HouseDetailData getData(String tradeId);
 	IPage<HouseListData> queryData(HouseQueryParam param, int page, int rows);
+	List<House> queryByBuildingUnitId(String buildingUnitId);
 }

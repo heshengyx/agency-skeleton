@@ -11,15 +11,43 @@ public class HouseQueryParam extends QueryParam {
 	private String townId;
 	private int priceBegin;
 	private int priceEnd;
-	private int pattern;
 	private int areaBegin;
 	private int areaEnd;
+	private int room;
+	private int saloon;
+	private int toilet;
+	private int subway;
+	private String releaseDateBegin;
+	private String releaseDateEnd;
 	private String symbol;
 	private String tag;
 	private String sort;
 	private String buildingName;
-	private int subway;
 	
+	public int getSaloon() {
+		return saloon;
+	}
+	public void setSaloon(int saloon) {
+		this.saloon = saloon;
+	}
+	public int getToilet() {
+		return toilet;
+	}
+	public void setToilet(int toilet) {
+		this.toilet = toilet;
+	}
+	public String getReleaseDateBegin() {
+		return releaseDateBegin;
+	}
+	public void setReleaseDateBegin(String releaseDateBegin) {
+		this.releaseDateBegin = releaseDateBegin;
+	}
+	public String getReleaseDateEnd() {
+		return releaseDateEnd;
+	}
+	public void setReleaseDateEnd(String releaseDateEnd) {
+		this.releaseDateEnd = releaseDateEnd;
+	}
 	public String getDistrictId() {
 		return districtId;
 	}
@@ -44,11 +72,11 @@ public class HouseQueryParam extends QueryParam {
 	public void setPriceEnd(int priceEnd) {
 		this.priceEnd = priceEnd;
 	}
-	public int getPattern() {
-		return pattern;
+	public int getRoom() {
+		return room;
 	}
-	public void setPattern(int pattern) {
-		this.pattern = pattern;
+	public void setRoom(int room) {
+		this.room = room;
 	}
 	public int getAreaBegin() {
 		return areaBegin;

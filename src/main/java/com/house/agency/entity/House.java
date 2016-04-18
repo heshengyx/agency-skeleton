@@ -19,6 +19,7 @@ public class House implements Serializable {
 	private int kitchen;
 	private int face;
 	private int fitment;
+	private String card;
 	private String code;
 	private String encode;
 	private String status;
@@ -26,6 +27,12 @@ public class House implements Serializable {
 	private Date updateTime;
 	private String remarks;
 	
+	public String getCard() {
+		return card;
+	}
+	public void setCard(String card) {
+		this.card = card;
+	}
 	public int getFitment() {
 		return fitment;
 	}
