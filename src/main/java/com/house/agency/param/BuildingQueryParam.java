@@ -3,7 +3,7 @@ package com.house.agency.param;
 import java.io.Serializable;
 
 
-public class BuildingQueryParam implements Serializable {
+public class BuildingQueryParam extends QueryParam {
 	
 	/**  */
 	private static final long serialVersionUID = -7030573523951102108L;
