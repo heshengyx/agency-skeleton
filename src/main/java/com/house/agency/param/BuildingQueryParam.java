@@ -1,6 +1,5 @@
 package com.house.agency.param;
 
-import java.io.Serializable;
 
 
 public class BuildingQueryParam extends QueryParam {
