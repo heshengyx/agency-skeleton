@@ -1,9 +1,12 @@
 package com.house.agency.service;
 
+import java.io.File;
 import java.util.List;
+import java.util.Map;
 
 import com.house.agency.entity.Image;
 import com.house.agency.page.IPage;
+import com.house.agency.param.ImageParam;
 import com.house.agency.param.ImageQueryParam;
 
 public interface IImageService {
@@ -16,4 +19,5 @@ public interface IImageService {
 	IPage<Image> query(ImageQueryParam param, int page, int rows);
 	List<Image> queryData(ImageQueryParam param);
 	List<Image> listData(ImageQueryParam param);
+	void upload(ImageParam param, Map<String, File> map, String path);
 }
