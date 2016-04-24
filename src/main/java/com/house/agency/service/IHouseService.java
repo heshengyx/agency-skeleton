@@ -2,12 +2,15 @@ package com.house.agency.service;
 
 import java.util.List;
 
-import com.house.agency.data.HouseDetailData;
-import com.house.agency.data.HouseListData;
+import com.house.agency.data.HouseInfoData;
+import com.house.agency.data.HouseData;
+import com.house.agency.data.home.HouseHomeData;
+import com.house.agency.data.home.HouseHomeDescData;
 import com.house.agency.data.manage.HouseManageData;
 import com.house.agency.entity.House;
 import com.house.agency.page.IPage;
 import com.house.agency.param.HouseQueryParam;
+import com.house.agency.param.home.HouseHomeQueryParam;
 import com.house.agency.param.manage.HouseManageQueryParam;
 
 public interface IHouseService {
@@ -22,12 +25,15 @@ public interface IHouseService {
 
 	IPage<House> query(HouseQueryParam param, int page, int rows);
 
-	HouseDetailData getData(String tradeId);
+	HouseInfoData getData(String tradeId);
 
-	IPage<HouseListData> queryData(HouseQueryParam param, int page, int rows);
+	IPage<HouseData> queryData(HouseQueryParam param, int page, int rows);
 
-	List<House> queryByBuildingUnitId(String buildingUnitId);
+	List<HouseHomeDescData> queryByBuildingUnitId(String buildingUnitId);
 
+	IPage<HouseHomeData> queryHomeData(HouseHomeQueryParam param,
+			int page, int rows);
+	
 	IPage<HouseManageData> queryManageData(HouseManageQueryParam param,
 			int page, int rows);
 }

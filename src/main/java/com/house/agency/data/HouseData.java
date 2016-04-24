@@ -3,21 +3,22 @@ package com.house.agency.data;
 import java.io.Serializable;
 import java.util.Date;
 
-public class HouseListData implements Serializable {
+public class HouseData implements Serializable {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1999542938990924943L;
 	private String tradeId;
-	private String imgTitle;
-	private String url;
-	private String title;
-	private String type;
+	private String districtName;
 	private String townName;
 	private String buildingName;
 	private String buildingAddress;
 	private String buildingYear;
+	private String imageTitle;
+	private String url;
+	private String title;
+	private String type;
 	private int buildingFloor;
 	private int price;
 	private int area;
@@ -27,6 +28,12 @@ public class HouseListData implements Serializable {
 	private int floor;
 	private Date releaseTime;
 	
+	public String getDistrictName() {
+		return districtName;
+	}
+	public void setDistrictName(String districtName) {
+		this.districtName = districtName;
+	}
 	public Date getReleaseTime() {
 		return releaseTime;
 	}
@@ -39,11 +46,11 @@ public class HouseListData implements Serializable {
 	public void setTradeId(String tradeId) {
 		this.tradeId = tradeId;
 	}
-	public String getImgTitle() {
-		return imgTitle;
+	public String getImageTitle() {
+		return imageTitle;
 	}
-	public void setImgTitle(String imgTitle) {
-		this.imgTitle = imgTitle;
+	public void setImageTitle(String imageTitle) {
+		this.imageTitle = imageTitle;
 	}
 	public String getUrl() {
 		return url;

@@ -8,7 +8,7 @@ import com.house.agency.enums.FaceEnum;
 import com.house.agency.enums.FitmentEnum;
 import com.house.agency.enums.OwnerEnum;
 
-public class HouseDetailData implements Serializable {
+public class HouseInfoData implements Serializable {
 
 	/**
 	 * 
@@ -17,8 +17,6 @@ public class HouseDetailData implements Serializable {
 	private String tradeId;
 	private String houseId;
 	private String buildingId;
-	private String title;
-	private String type;
 	private String districtName;
 	private String townName;
 	private String buildingName;
@@ -27,6 +25,8 @@ public class HouseDetailData implements Serializable {
 	private String buildingType;
 	private String buildingTypeName;
 	private int buildingFloor;
+	private String title;
+	private String type;
 	private int price;
 	private int area;
 	private int room;

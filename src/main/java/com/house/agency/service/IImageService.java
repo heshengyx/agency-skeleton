@@ -12,12 +12,20 @@ import com.house.agency.param.ImageQueryParam;
 public interface IImageService {
 
 	void save(Image param);
+
 	void update(Image param);
+
 	void deleteById(String id);
+
 	Image getDataById(String id);
 
 	IPage<Image> query(ImageQueryParam param, int page, int rows);
+
 	List<Image> queryData(ImageQueryParam param);
+
 	List<Image> listData(ImageQueryParam param);
-	void upload(ImageParam param, Map<String, File> map, String path);
+
+	Image upload(ImageParam param, Map<String, File> map, String path);
+
+	void trash(String id, String path);
 }

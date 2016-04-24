@@ -31,8 +31,15 @@ public class HouseManageData implements Serializable {
 	private String card;
 	private String code;
 	private String encode;
+	private String status;
 	private Date createTime;
 	
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
 	public String getHouseId() {
 		return houseId;
 	}
