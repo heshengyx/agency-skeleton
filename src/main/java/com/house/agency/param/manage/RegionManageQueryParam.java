@@ -11,7 +11,14 @@ public class RegionManageQueryParam extends QueryParam {
 	private String parentId;
 	private String name;
 	private String code;
+	private String level;
 	
+	public String getLevel() {
+		return level;
+	}
+	public void setLevel(String level) {
+		this.level = level;
+	}
 	public String getParentId() {
 		return parentId;
 	}
