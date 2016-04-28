@@ -3,20 +3,6 @@ package com.house.agency.page;
 import java.util.ArrayList;
 import java.util.Collection;
 
-/**
- * 描述：
- * 
- * <pre>
- * HISTORY
- * ****************************************************************************
- *  ID   DATE           PERSON          REASON
- *  1    2015年11月2日      608279         Create
- * ****************************************************************************
- * </pre>
- * 
- * @author 608279
- * @since 1.0
- */
 public class Page<T> implements IPage<T> {
 
 	/**  */
