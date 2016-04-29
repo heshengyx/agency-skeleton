@@ -1,6 +1,7 @@
 package com.house.agency.service;
 
 import java.util.List;
+import java.util.Map;
 
 import com.house.agency.data.manage.RegionManageData;
 import com.house.agency.entity.Region;
@@ -24,4 +25,6 @@ public interface IRegionService {
 	
 	IPage<RegionManageData> queryManageData(RegionManageQueryParam param,
 			int page, int rows);
+	
+	void getRegionById(String id, Map<String, List<Region>> regions);
 }
