@@ -14,6 +14,8 @@ public interface IRegionService {
 	void save(Region param);
 
 	void update(Region param);
+	
+	void saveOrUpdate(Region param);
 
 	void deleteById(String id);
 
@@ -26,5 +28,5 @@ public interface IRegionService {
 	IPage<RegionManageData> queryManageData(RegionManageQueryParam param,
 			int page, int rows);
 	
-	void getRegionById(String id, Map<String, List<Region>> regions);
+	Map<String, List<Region>> getRegionById(String id, Map<String, List<Region>> regions);
 }
