@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.List;
 import java.util.Map;
 
+import com.house.agency.data.manage.ImageManageData;
 import com.house.agency.entity.Image;
 import com.house.agency.page.IPage;
 import com.house.agency.param.ImageParam;
@@ -28,4 +29,6 @@ public interface IImageService {
 	Image upload(ImageParam param, Map<String, File> map, String path);
 
 	void trash(String id, String path);
+	
+	List<ImageManageData> queryDataByFuid(ImageQueryParam param);
 }
