@@ -10,6 +10,8 @@ public class HouseHomeData implements Serializable {
 	 */
 	private static final long serialVersionUID = 3722030397289079462L;
 	private String tradeId;
+	private String houseId;
+	private String buildingId;
 	private String districtName;
 	private String townName;
 	private String buildingName;
@@ -33,6 +35,18 @@ public class HouseHomeData implements Serializable {
 	private String status;
 	private Date releaseTime;
 	
+	public String getHouseId() {
+		return houseId;
+	}
+	public void setHouseId(String houseId) {
+		this.houseId = houseId;
+	}
+	public String getBuildingId() {
+		return buildingId;
+	}
+	public void setBuildingId(String buildingId) {
+		this.buildingId = buildingId;
+	}
 	public String getTitle() {
 		return title;
 	}

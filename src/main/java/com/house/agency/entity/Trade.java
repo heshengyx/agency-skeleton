@@ -17,11 +17,18 @@ public class Trade implements Serializable {
 	private String title;
 	private long price;
 	private Date releaseTime;
+	private String content;
 	private String status;
 	private Date createTime;
 	private Date updateTime;
 	private String remarks;
 	
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
+	}
 	public String getImageId() {
 		return imageId;
 	}

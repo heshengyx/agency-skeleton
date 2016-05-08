@@ -42,9 +42,16 @@ public class HouseInfoData implements Serializable {
 	private String code;
 	private String encode;
 	private Date releaseTime;
+	private String content;
 	private String username;
 	private String phone;
 
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
+	}
 	public int getOwner() {
 		return owner;
 	}

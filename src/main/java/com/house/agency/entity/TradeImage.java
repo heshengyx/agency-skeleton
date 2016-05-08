@@ -13,11 +13,25 @@ public class TradeImage implements Serializable {
 	private String tradeId;
 	private String imageId;
 	private String type;
+	private int sort;
+	private String cover;
 	private String status;
 	private Date createTime;
 	private Date updateTime;
 	private String remarks;
 	
+	public String getCover() {
+		return cover;
+	}
+	public void setCover(String cover) {
+		this.cover = cover;
+	}
+	public int getSort() {
+		return sort;
+	}
+	public void setSort(int sort) {
+		this.sort = sort;
+	}
 	public String getId() {
 		return id;
 	}

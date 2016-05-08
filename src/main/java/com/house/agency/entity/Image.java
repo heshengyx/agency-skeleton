@@ -15,11 +15,18 @@ public class Image implements Serializable {
 	private String title;
 	private String url;
 	private String type;
+	private int sort;
 	private String status;
 	private Date createTime;
 	private Date updateTime;
 	private String remarks;
 	
+	public int getSort() {
+		return sort;
+	}
+	public void setSort(int sort) {
+		this.sort = sort;
+	}
 	public String getTitle() {
 		return title;
 	}

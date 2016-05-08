@@ -1,8 +1,8 @@
-package com.house.agency.data.manage;
+package com.house.agency.data;
 
 import java.io.Serializable;
 
-public class ImageManageData implements Serializable {
+public class ImageData implements Serializable {
 
 	/**
 	 * 
@@ -12,8 +12,29 @@ public class ImageManageData implements Serializable {
 	private String title;
 	private String url;
 	private String thumb;
+	private int sort;
 	private String status;
+	private String activeId;
+	private String cover;
 	
+	public String getCover() {
+		return cover;
+	}
+	public void setCover(String cover) {
+		this.cover = cover;
+	}
+	public String getActiveId() {
+		return activeId;
+	}
+	public void setActiveId(String activeId) {
+		this.activeId = activeId;
+	}
+	public int getSort() {
+		return sort;
+	}
+	public void setSort(int sort) {
+		this.sort = sort;
+	}
 	public String getId() {
 		return id;
 	}

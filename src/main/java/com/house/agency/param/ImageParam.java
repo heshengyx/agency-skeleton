@@ -9,9 +9,16 @@ public class ImageParam implements Serializable {
 	 */
 	private static final long serialVersionUID = 2515078973110512750L;
 	private String foreignId;
+	private String userId;
 	private String type;
 	private String folder;
 	
+	public String getUserId() {
+		return userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
 	public String getForeignId() {
 		return foreignId;
 	}
