@@ -12,4 +12,5 @@ public interface ITradeService {
 	Trade getDataById(String id);
 
 	IPage<Trade> query(TradeQueryParam param, int page, int rows);
+	void saveOrUpdate(Trade param);
 }
