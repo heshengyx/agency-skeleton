@@ -13,5 +13,4 @@ public interface ITradeService {
 
 	IPage<Trade> query(TradeQueryParam param, int page, int rows);
 	void saveOrUpdate(Trade param, String buildingId);
-	void saveOrUpdate(Trade param);
 }
