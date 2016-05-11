@@ -16,6 +16,7 @@ public class Trade implements Serializable {
 	private String type;
 	private String title;
 	private long price;
+	private int images;
 	private Date releaseTime;
 	private String content;
 	private String status;
@@ -23,6 +24,12 @@ public class Trade implements Serializable {
 	private Date updateTime;
 	private String remarks;
 	
+	public int getImages() {
+		return images;
+	}
+	public void setImages(int images) {
+		this.images = images;
+	}
 	public String getContent() {
 		return content;
 	}

@@ -24,7 +24,7 @@ public interface IImageService {
 
 	List<Image> queryData(ImageQueryParam param);
 
-	List<Image> listData(ImageQueryParam param);
+	List<Image> queryDataByFid(ImageQueryParam param);
 
 	Image upload(ImageParam param, Map<String, File> map, String path);
 

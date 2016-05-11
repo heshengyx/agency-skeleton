@@ -26,8 +26,15 @@ public class HouseData implements Serializable {
 	private int saloon;
 	private int toilet;
 	private int floor;
+	private int images;
 	private Date releaseTime;
 	
+	public int getImages() {
+		return images;
+	}
+	public void setImages(int images) {
+		this.images = images;
+	}
 	public String getDistrictName() {
 		return districtName;
 	}
