@@ -1,5 +1,24 @@
 package com.house.agency.param;
 
-public class CustomerQueryParam {
+public class CustomerQueryParam extends QueryParam {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8424310230335161907L;
+	private String name;
+	private String phone;
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
 }

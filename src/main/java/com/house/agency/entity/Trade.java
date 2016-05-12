@@ -18,12 +18,19 @@ public class Trade implements Serializable {
 	private long price;
 	private int images;
 	private Date releaseTime;
+	private String matchs;
 	private String content;
 	private String status;
 	private Date createTime;
 	private Date updateTime;
 	private String remarks;
 	
+	public String getMatchs() {
+		return matchs;
+	}
+	public void setMatchs(String matchs) {
+		this.matchs = matchs;
+	}
 	public int getImages() {
 		return images;
 	}
