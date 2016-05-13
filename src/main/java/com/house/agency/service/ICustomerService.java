@@ -1,5 +1,7 @@
 package com.house.agency.service;
 
+import java.util.List;
+
 import com.house.agency.entity.Customer;
 import com.house.agency.page.IPage;
 import com.house.agency.param.CustomerQueryParam;
@@ -17,4 +19,6 @@ public interface ICustomerService {
 	IPage<Customer> query(CustomerQueryParam param, int page, int rows);
 	
 	void saveOrUpdate(Customer param);
+	
+	List<Customer> queryDataByUid(String userId);
 }

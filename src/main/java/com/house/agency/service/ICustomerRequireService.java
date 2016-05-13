@@ -7,9 +7,15 @@ import com.house.agency.param.CustomerRequireQueryParam;
 public interface ICustomerRequireService {
 
 	void save(CustomerRequire param);
+
 	void update(CustomerRequire param);
+
 	void deleteById(String id);
+
 	CustomerRequire getDataById(String id);
 
-	IPage<CustomerRequire> query(CustomerRequireQueryParam param, int page, int rows);
+	IPage<CustomerRequire> query(CustomerRequireQueryParam param, int page,
+			int rows);
+	
+	void saveOrUpdate(CustomerRequire param);
 }
