@@ -2,8 +2,8 @@ package com.house.agency.service;
 
 import java.util.List;
 
-import com.house.agency.data.HouseInfoData;
 import com.house.agency.data.HouseData;
+import com.house.agency.data.HouseInfoData;
 import com.house.agency.data.home.HouseHomeData;
 import com.house.agency.data.home.HouseHomeDescData;
 import com.house.agency.data.manage.HouseManageData;
@@ -35,5 +35,8 @@ public interface IHouseService {
 			int page, int rows);
 	
 	IPage<HouseManageData> queryManageData(HouseManageQueryParam param,
+			int page, int rows);
+	
+	IPage<HouseHomeData> queryByCustomerRequire(HouseHomeQueryParam param,
 			int page, int rows);
 }

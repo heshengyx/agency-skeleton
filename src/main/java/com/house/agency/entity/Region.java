@@ -14,7 +14,7 @@ public class Region implements Serializable {
 	private String name;
 	private String code;
 	private String level;
-	private int seq;
+	private int sort;
 	private String status;
 	private Date createTime;
 	private Date updateTime;
@@ -50,14 +50,14 @@ public class Region implements Serializable {
 	public void setLevel(String level) {
 		this.level = level;
 	}
-	public int getSeq() {
-		return seq;
-	}
-	public void setSeq(int seq) {
-		this.seq = seq;
-	}
 	public String getStatus() {
 		return status;
+	}
+	public int getSort() {
+		return sort;
+	}
+	public void setSort(int sort) {
+		this.sort = sort;
 	}
 	public void setStatus(String status) {
 		this.status = status;

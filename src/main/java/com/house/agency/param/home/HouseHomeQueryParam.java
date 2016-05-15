@@ -1,5 +1,7 @@
 package com.house.agency.param.home;
 
+import java.util.List;
+
 import com.house.agency.param.QueryParam;
 
 public class HouseHomeQueryParam extends QueryParam {
@@ -13,10 +15,10 @@ public class HouseHomeQueryParam extends QueryParam {
 	private String buildingName;
 	private String buildingUnitId;
 	private String card;
-	private int priceBegin;
-	private int priceEnd;
-	private int areaBegin;
-	private int areaEnd;
+	private long priceBegin;
+	private long priceEnd;
+	private long areaBegin;
+	private long areaEnd;
 	private int room;
 	private int saloon;
 	private int toilet;
@@ -24,6 +26,35 @@ public class HouseHomeQueryParam extends QueryParam {
 	private String releaseDateBegin;
 	private String releaseDateEnd;
 	
+	private String buildingId;
+	private String rooms;
+	private String saloons;
+	private String toilets;
+	
+	public String getBuildingId() {
+		return buildingId;
+	}
+	public void setBuildingId(String buildingId) {
+		this.buildingId = buildingId;
+	}
+	public String getRooms() {
+		return rooms;
+	}
+	public void setRooms(String rooms) {
+		this.rooms = rooms;
+	}
+	public String getSaloons() {
+		return saloons;
+	}
+	public void setSaloons(String saloons) {
+		this.saloons = saloons;
+	}
+	public String getToilets() {
+		return toilets;
+	}
+	public void setToilets(String toilets) {
+		this.toilets = toilets;
+	}
 	public String getSymbol() {
 		return symbol;
 	}
@@ -36,28 +67,28 @@ public class HouseHomeQueryParam extends QueryParam {
 	public void setCard(String card) {
 		this.card = card;
 	}
-	public int getPriceBegin() {
+	public long getPriceBegin() {
 		return priceBegin;
 	}
-	public void setPriceBegin(int priceBegin) {
+	public void setPriceBegin(long priceBegin) {
 		this.priceBegin = priceBegin;
 	}
-	public int getPriceEnd() {
+	public long getPriceEnd() {
 		return priceEnd;
 	}
-	public void setPriceEnd(int priceEnd) {
+	public void setPriceEnd(long priceEnd) {
 		this.priceEnd = priceEnd;
 	}
-	public int getAreaBegin() {
+	public long getAreaBegin() {
 		return areaBegin;
 	}
-	public void setAreaBegin(int areaBegin) {
+	public void setAreaBegin(long areaBegin) {
 		this.areaBegin = areaBegin;
 	}
-	public int getAreaEnd() {
+	public long getAreaEnd() {
 		return areaEnd;
 	}
-	public void setAreaEnd(int areaEnd) {
+	public void setAreaEnd(long areaEnd) {
 		this.areaEnd = areaEnd;
 	}
 	public int getRoom() {
