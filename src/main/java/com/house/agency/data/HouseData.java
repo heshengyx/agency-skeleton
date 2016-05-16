@@ -26,9 +26,16 @@ public class HouseData implements Serializable {
 	private int saloon;
 	private int toilet;
 	private int floor;
+	private int face;
 	private int images;
 	private Date releaseTime;
 	
+	public int getFace() {
+		return face;
+	}
+	public void setFace(int face) {
+		this.face = face;
+	}
 	public int getImages() {
 		return images;
 	}

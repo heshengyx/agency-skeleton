@@ -1,5 +1,7 @@
 package com.house.agency.service;
 
+import java.util.Map;
+
 import com.house.agency.entity.Configure;
 import com.house.agency.page.IPage;
 import com.house.agency.param.ConfigureQueryParam;
@@ -17,4 +19,6 @@ public interface IConfigureService {
 	IPage<Configure> query(ConfigureQueryParam param, int page, int rows);
 	
 	String getValueByKey(String key);
+	
+	Map<String, String> queryValueByKey(String key);
 }
