@@ -18,7 +18,6 @@ public class House implements Serializable {
 	private int toilet;
 	private int kitchen;
 	private int face;
-	private int fitment;
 	private String card;
 	private String code;
 	private String encode;
@@ -32,12 +31,6 @@ public class House implements Serializable {
 	}
 	public void setCard(String card) {
 		this.card = card;
-	}
-	public int getFitment() {
-		return fitment;
-	}
-	public void setFitment(int fitment) {
-		this.fitment = fitment;
 	}
 	public String getCode() {
 		return code;

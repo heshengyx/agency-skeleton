@@ -26,9 +26,7 @@ public class HouseHomeData implements Serializable {
 	private int toilet;
 	private int floor;
 	private int face;
-	private String faceName;
 	private int fitment;
-	private String fitmentName;
 	private String card;
 	private String code;
 	private String encode;
@@ -137,23 +135,11 @@ public class HouseHomeData implements Serializable {
 	public void setFace(int face) {
 		this.face = face;
 	}
-	public String getFaceName() {
-		return faceName;
-	}
-	public void setFaceName(String faceName) {
-		this.faceName = faceName;
-	}
 	public int getFitment() {
 		return fitment;
 	}
 	public void setFitment(int fitment) {
 		this.fitment = fitment;
-	}
-	public String getFitmentName() {
-		return fitmentName;
-	}
-	public void setFitmentName(String fitmentName) {
-		this.fitmentName = fitmentName;
 	}
 	public String getCard() {
 		return card;

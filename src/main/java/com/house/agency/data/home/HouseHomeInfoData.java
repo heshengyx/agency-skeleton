@@ -2,10 +2,7 @@ package com.house.agency.data.home;
 
 import java.io.Serializable;
 
-import com.house.agency.enums.FaceEnum;
-import com.house.agency.enums.FitmentEnum;
-
-public class HouseHomeDescData implements Serializable {
+public class HouseHomeInfoData implements Serializable {
 
 	/**
 	 * 
@@ -19,10 +16,7 @@ public class HouseHomeDescData implements Serializable {
 	private int toilet;
 	private int kitchen;
 	private int face;
-	private int fitment;
 	private String card;
-	private String faceName;
-	private String fitmentName;
 	
 	public String getHouseId() {
 		return houseId;
@@ -35,22 +29,6 @@ public class HouseHomeDescData implements Serializable {
 	}
 	public void setCard(String card) {
 		this.card = card;
-	}
-	public String getFaceName() {
-		String name = FaceEnum.getTextByValue(String.valueOf(face));
-		name = (name == null) ?  "" : name;
-		return name;
-	}
-	public void setFaceName(String faceName) {
-		this.faceName = faceName;
-	}
-	public String getFitmentName() {
-		String name = FitmentEnum.getTextByValue(String.valueOf(fitment));
-		name = (name == null) ?  "" : name;
-		return name;
-	}
-	public void setFitmentName(String fitmentName) {
-		this.fitmentName = fitmentName;
 	}
 	public int getArea() {
 		return area;
@@ -93,11 +71,5 @@ public class HouseHomeDescData implements Serializable {
 	}
 	public void setFace(int face) {
 		this.face = face;
-	}
-	public int getFitment() {
-		return fitment;
-	}
-	public void setFitment(int fitment) {
-		this.fitment = fitment;
 	}
 }

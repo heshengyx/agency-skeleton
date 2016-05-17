@@ -8,8 +8,20 @@ public enum ConfigureEnum {
 	IMAGE_BLANK("image_blank"),
 	IMAGE_URL("image_url"),
 	PROFILE_BLANK("profile_blank"),
-	MATCH("match"),
-	FACES("faces");
+	MATCHS("matchs"),
+	FACES("faces"),
+	ROOMS("rooms"),
+	SALOONS("saloons"),
+	TOILETS("toilets"),
+	
+	FITMENTS("fitments"),
+	PROPERTYS("propertys"),
+	BUILDING_TYPES("building_types"),
+	
+	PRICES("prices"),
+	AREAS("areas"),
+	PATTERNS("patterns"),
+	SUBWAYS("subways");
 	
 	private final String value;
 	

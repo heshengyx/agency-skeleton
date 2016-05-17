@@ -16,6 +16,8 @@ public class Trade implements Serializable {
 	private String type;
 	private String title;
 	private long price;
+	private int fitment;
+	private int property;
 	private int images;
 	private Date releaseTime;
 	private String matchs;
@@ -25,6 +27,18 @@ public class Trade implements Serializable {
 	private Date updateTime;
 	private String remarks;
 	
+	public int getProperty() {
+		return property;
+	}
+	public void setProperty(int property) {
+		this.property = property;
+	}
+	public int getFitment() {
+		return fitment;
+	}
+	public void setFitment(int fitment) {
+		this.fitment = fitment;
+	}
 	public String getMatchs() {
 		return matchs;
 	}

@@ -5,7 +5,7 @@ import java.util.List;
 import com.house.agency.data.HouseData;
 import com.house.agency.data.HouseInfoData;
 import com.house.agency.data.home.HouseHomeData;
-import com.house.agency.data.home.HouseHomeDescData;
+import com.house.agency.data.home.HouseHomeInfoData;
 import com.house.agency.data.manage.HouseManageData;
 import com.house.agency.entity.House;
 import com.house.agency.page.IPage;
@@ -29,7 +29,7 @@ public interface IHouseService {
 
 	IPage<HouseData> queryData(HouseQueryParam param, int page, int rows);
 
-	List<HouseHomeDescData> queryByBuildingUnitId(String buildingUnitId);
+	List<HouseHomeInfoData> queryByBuildingUnitId(String buildingUnitId);
 
 	IPage<HouseHomeData> queryHomeData(HouseHomeQueryParam param,
 			int page, int rows);
