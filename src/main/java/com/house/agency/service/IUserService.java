@@ -11,7 +11,7 @@ public interface IUserService {
 	void update(User param);
 	void deleteById(String id);
 	User getDataById(String id);
-	User getDataByUsername(String username);
+	User getDataByAccount(String account);
 
 	IPage<User> query(UserQueryParam param, int page, int rows);
 }
