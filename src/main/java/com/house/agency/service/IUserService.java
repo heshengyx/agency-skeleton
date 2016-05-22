@@ -14,4 +14,7 @@ public interface IUserService {
 	User getDataByAccount(String account);
 
 	IPage<User> query(UserQueryParam param, int page, int rows);
+	
+	void checkByAccount(String account);
+	void signup(User param);
 }
