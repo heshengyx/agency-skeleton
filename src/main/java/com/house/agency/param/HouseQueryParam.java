@@ -23,7 +23,21 @@ public class HouseQueryParam extends QueryParam {
 	private String tag;
 	private String sort;
 	private String buildingName;
+	private String type;
+	private String style;
 	
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getStyle() {
+		return style;
+	}
+	public void setStyle(String style) {
+		this.style = style;
+	}
 	public int getSaloon() {
 		return saloon;
 	}

@@ -3,9 +3,6 @@ package com.house.agency.data.manage;
 import java.io.Serializable;
 import java.util.Date;
 
-import com.house.agency.enums.FaceEnum;
-import com.house.agency.enums.FitmentEnum;
-
 public class HouseManageData implements Serializable {
 
 	/**
@@ -25,9 +22,7 @@ public class HouseManageData implements Serializable {
 	private int toilet;
 	private int floor;
 	private int face;
-	private String faceName;
 	private int fitment;
-	private String fitmentName;
 	private String card;
 	private String code;
 	private String encode;
@@ -124,27 +119,11 @@ public class HouseManageData implements Serializable {
 	public void setFace(int face) {
 		this.face = face;
 	}
-	public String getFaceName() {
-		String name = FaceEnum.getTextByValue(String.valueOf(face));
-		name = (name == null) ?  "" : name;
-		return name;
-	}
-	public void setFaceName(String faceName) {
-		this.faceName = faceName;
-	}
 	public int getFitment() {
 		return fitment;
 	}
 	public void setFitment(int fitment) {
 		this.fitment = fitment;
-	}
-	public String getFitmentName() {
-		String name = FitmentEnum.getTextByValue(String.valueOf(fitment));
-		name = (name == null) ?  "" : name;
-		return name;
-	}
-	public void setFitmentName(String fitmentName) {
-		this.fitmentName = fitmentName;
 	}
 	public String getCard() {
 		return card;

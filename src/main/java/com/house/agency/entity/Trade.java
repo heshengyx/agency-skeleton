@@ -13,7 +13,6 @@ public class Trade implements Serializable {
 	private String houseId;
 	private String userId;
 	private String imageId;
-	private String type;
 	private String title;
 	private long price;
 	private int fitment;
@@ -22,11 +21,19 @@ public class Trade implements Serializable {
 	private Date releaseTime;
 	private String matchs;
 	private String content;
+	private String type;
+	private String style;
 	private String status;
 	private Date createTime;
 	private Date updateTime;
 	private String remarks;
 	
+	public String getStyle() {
+		return style;
+	}
+	public void setStyle(String style) {
+		this.style = style;
+	}
 	public int getProperty() {
 		return property;
 	}

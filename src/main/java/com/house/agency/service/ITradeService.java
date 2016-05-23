@@ -2,6 +2,7 @@ package com.house.agency.service;
 
 import com.house.agency.entity.Trade;
 import com.house.agency.page.IPage;
+import com.house.agency.param.TradeParam;
 import com.house.agency.param.TradeQueryParam;
 
 public interface ITradeService {
@@ -12,5 +13,5 @@ public interface ITradeService {
 	Trade getDataById(String id);
 
 	IPage<Trade> query(TradeQueryParam param, int page, int rows);
-	void saveOrUpdate(Trade param, String buildingId);
+	void saveOrUpdate(TradeParam param);
 }

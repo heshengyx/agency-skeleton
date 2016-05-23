@@ -1,17 +1,14 @@
 package com.house.agency.enums;
 
+public enum TradeEnum {
 
-public enum FaceEnum {
-
-	EAST(CommonEnum.ONE, "东"), 
-    SOUTH(CommonEnum.TWO, "南"),
-    WEST(CommonEnum.THREE, "西"),
-    NORTH(CommonEnum.FOUR, "北");
+	SALE(CommonEnum.ONE, "出售"), 
+	RENT(CommonEnum.TWO, "出租");
 	
 	private String value;
 	private String text;
 	
-	private FaceEnum(String value, String text){
+	private TradeEnum(String value, String text){
 		this.value = value;
 		this.text = text;
 	}
@@ -25,7 +22,7 @@ public enum FaceEnum {
 	
 	public static String getTextByValue(String value) {
 		String text = "";
-		for(FaceEnum e : FaceEnum.values()){
+		for(TradeEnum e : TradeEnum.values()){
 			if (e.getValue().equals(value)) {
 				text = e.getText();
 				break;

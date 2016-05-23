@@ -1,7 +1,5 @@
 package com.house.agency.param.home;
 
-import java.util.List;
-
 import com.house.agency.param.QueryParam;
 
 public class HouseHomeQueryParam extends QueryParam {
@@ -25,12 +23,26 @@ public class HouseHomeQueryParam extends QueryParam {
 	private String symbol;
 	private String releaseDateBegin;
 	private String releaseDateEnd;
+	private String type;
+	private String style;
 	
 	private String buildingId;
 	private String rooms;
 	private String saloons;
 	private String toilets;
 	
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getStyle() {
+		return style;
+	}
+	public void setStyle(String style) {
+		this.style = style;
+	}
 	public String getBuildingId() {
 		return buildingId;
 	}
